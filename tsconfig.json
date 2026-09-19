@@ -19,7 +19,10 @@
     "noUnusedParameters": true,
     "plugins": [
       { "name": "typescript-plugin-css-modules" }
-    ]
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["src/**/*"]
 }
