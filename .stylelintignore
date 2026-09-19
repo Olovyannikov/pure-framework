@@ -1,0 +1,10 @@
+*.ts
+*.md
+/node_modules
+*.json
+/.vercel
+.ideag
+.env
+.stylelintignore
+.stylelintrc
+.vite-inspect

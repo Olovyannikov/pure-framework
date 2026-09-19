@@ -16,7 +16,10 @@
 
     /* type checking */
     "noUnusedLocals": true,
-    "noUnusedParameters": true
+    "noUnusedParameters": true,
+    "plugins": [
+      { "name": "typescript-plugin-css-modules" }
+    ]
   },
-  "include": ["src"]
+  "include": ["src/**/*"]
 }

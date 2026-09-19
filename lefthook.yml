@@ -1,3 +1,11 @@
+prepare-commit-msg:
+  commands:
+    commitzen:
+      interactive: true
+      run: pnpm run commit --hook
+      env:
+        LEFTHOOK: "0"
+
 pre-commit:
   parallel: true
   commands:
@@ -19,8 +27,6 @@ pre-commit:
       run: pnpm run test:unit
     knip:
       run: knip && pnpm run knip:md && pnpm run knip:fix
-    version:
-      run: pnpm run version
 
 commit-msg:
   parallel: true
